@@ -1,0 +1,27 @@
+@media screen and (max-width: 760px){
+    .menu-nav{
+        visibility: hidden;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .left{
+        margin-bottom: 4em;
+    }
+
+    .img{
+        width: 400px;
+    }
+
+    .fa-bars{
+        visibility: visible;
+        font-size: 2em;
+    }
+
+    .bars{
+        margin-left: 80%;
+    }
+
+}

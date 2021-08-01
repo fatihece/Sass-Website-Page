@@ -1,0 +1,45 @@
+@mixin flexCenter($justifyContent){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+    
+}
+
+.nav{
+    @include flexCenter(space-between);
+    margin-top: 1.5em;
+    color:$fontColor;
+    font-size: 1.125rem;
+
+    .bars{
+        visibility:hidden;
+    }
+
+    .logo{
+        font-family: sans-serif;
+        font-size: 2rem;
+        font-weight: map-get($font-weight, "regular" );
+    }
+    
+    ul{
+
+        @include flexCenter(center);
+
+        li{
+            margin-right: 1.7em;
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+
+                &:hover,
+                &:focus{
+                    color: $greenColor;
+                }
+
+            }
+        }
+         
+    }
+   
+}
