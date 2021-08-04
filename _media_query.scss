@@ -1,8 +1,50 @@
-@media screen and (max-width: 760px){
-    .menu-nav{
-        visibility: hidden;
+@media screen and (max-width: 767px){
+
+    .nav{
+
+        .openMenu{
+            display: block;
+        }
+
     }
 
+
+    .menu-nav{
+
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+        background: $greenColor;
+
+        .closeMenu{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+        }
+
+        .menu-link{
+            color:$fontColor;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        
+    }
+    
+  
+    
     .main{
         flex-direction: column;
     }
@@ -15,13 +57,5 @@
         width: 400px;
     }
 
-    .fa-bars{
-        visibility: visible;
-        font-size: 2em;
-    }
-
-    .bars{
-        margin-left: 80%;
-    }
-
+    
 }
